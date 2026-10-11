@@ -1,0 +1,6 @@
+data "oci_datascience_ml_application_implementation_version" "datascience_ml_application_implementation_version_lookup" {
+  for_each = var.datascience_ml_application_implementation_version_lookup
+
+  ml_application_implementation_version_id = each.value.ml_application_implementation_version_id
+}
+
